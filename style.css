@@ -1,0 +1,923 @@
+                                                    /*============Переменные CSS===========*/
+                                                    
+                                                     :root {
+                                                        --btn-blue: #188CE8;
+                                                        --accent-color: #2196F3;
+                                                        --accent-color-white: #FFFFFF;
+                                                        --accent-color-grey: #757575;
+                                                        --accent-color-black: #212121;
+                                                        --color-grey: #2F303A;
+                                                        --accen-section-about: #F5F4FA;
+                                                        --fon-portfolio: #E5E5E5;
+                                                        --icon-grey: #AFB1B8;
+                                                    }
+                                                    
+                                                    h1,
+                                                    h2,
+                                                    h3,
+                                                    h4,
+                                                    h5,
+                                                    h6,
+                                                    p,
+                                                    ul {
+                                                        margin: 0;
+                                                        padding: 0;
+                                                    }
+                                                    
+                                                    img {
+                                                        display: block;
+                                                    }
+                                                    /*=========Body=========*/
+                                                    
+                                                    body {
+                                                        font-family: "Roboto", sans-serif;
+                                                        color: #212121;
+                                                    }
+                                                    /*Підкреслення силки*/
+                                                    
+                                                    .link {
+                                                        text-decoration: none;
+                                                    }
+                                                    /*Маркери списків ul*/
+                                                    
+                                                    .list {
+                                                        list-style: none;
+                                                        font-style: normal;
+                                                    }
+                                                    /* CONTAINER */
+                                                    
+                                                    .container {
+                                                        width: 1200px;
+                                                        padding-left: 15px;
+                                                        padding-right: 15px;
+                                                        margin-left: auto;
+                                                        margin-right: auto;
+                                                    }
+                                                    /*======Flex======*/
+                                                    
+                                                    .header {
+                                                        border: 1px solid #ECECEC;
+                                                    }
+                                                    
+                                                    .nav-header {
+                                                        display: flex;
+                                                        align-items: baseline;
+                                                    }
+                                                    
+                                                    .list-nav {
+                                                        display: flex;
+                                                        margin-left: 93px;
+                                                    }
+                                                    
+                                                    .list-nav .item {
+                                                        margin-right: 50px;
+                                                    }
+                                                    
+                                                    .list-nav .item:last-child {
+                                                        margin-right: 0;
+                                                    }
+                                                    
+                                                    .auth-list {
+                                                        display: flex;
+                                                        margin-left: auto;
+                                                    }
+                                                    /*Для імейла та телефону задано класи з флексами*/
+                                                    
+                                                    .auth-list .item+.item {
+                                                        margin-left: 50px;
+                                                    }
+                                                    
+                                                    .header .container {
+                                                        display: flex;
+                                                        align-items: center;
+                                                    }
+                                                    
+                                                    .link-logo {
+                                                        font-family: "Raleway", sans-serif;
+                                                        font-weight: 700;
+                                                        font-size: 26px;
+                                                        line-height: 1.19;
+                                                        letter-spacing: 0.03em;
+                                                        color: var(--accent-color-black);
+                                                        display: block;
+                                                    }
+                                                    
+                                                    .logo {
+                                                        color: var(--accent-color);
+                                                    }
+                                                    
+                                                    .mail-link,
+                                                    .tel-link {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        font-weight: 500;
+                                                        font-size: 14px;
+                                                        line-height: 1.14;
+                                                        letter-spacing: 0.02em;
+                                                        color: var(--accent-color-grey);
+                                                        padding-top: 32px;
+                                                        padding-bottom: 32px;
+                                                        transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .mail-link:hover,
+                                                    .mail-link:focus,
+                                                    .tel-link:hover,
+                                                    .tel-link:focus {
+                                                        color: var(--accent-color);
+                                                    }
+                                                    /*----------ICON------------*/
+                                                    
+                                                    .icon-convert {
+                                                        margin-right: 10.85px;
+                                                        fill: #757575;
+                                                        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .tel-link:hover .icon-smartphone,
+                                                    .tel-link:focus .icon-smartphone,
+                                                    .mail-link:hover .icon-convert,
+                                                    .mail-link:focus .icon-convert {
+                                                        fill: var(--accent-color);
+                                                    }
+                                                    
+                                                    .icon-smartphone {
+                                                        margin-right: 10.46px;
+                                                        fill: #757575;
+                                                        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .icon-group-list {
+                                                        display: flex;
+                                                        width: 270px;
+                                                        height: 120px;
+                                                        background-color: #F5F4FA;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                    }
+                                                    
+                                                    .social-list {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: space-between;
+                                                    }
+                                                    
+                                                    .social-list-icon {
+                                                        fill: var(--icon-grey);
+                                                        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .social-list-link {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        width: 44px;
+                                                        height: 44px;
+                                                        border-radius: 50% 50%;
+                                                        transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .social-list-link:hover,
+                                                    .social-list-link:focus {
+                                                        background-color: var(--accent-color);
+                                                    }
+                                                    
+                                                    .social-list-link:hover .social-list-icon,
+                                                    .social-list-link:focus .social-list-icon {
+                                                        fill: var(--accent-color-white);
+                                                    }
+                                                    /*================section-heading==================*/
+                                                    
+                                                    .section-heading {
+                                                        background-color: #2F303A;
+                                                        padding-top: 200px;
+                                                        padding-bottom: 200px;
+                                                        max-width: 1600px;
+                                                        height: 600px;
+                                                        background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./image/hero.png);
+                                                        margin-left: auto;
+                                                        margin-right: auto;
+                                                        background-repeat: no-repeat;
+                                                        background-size: cover;
+                                                        background-position: center;
+                                                    }
+                                                    
+                                                    .section-heading-links {
+                                                        font-weight: 700;
+                                                        font-size: 44px;
+                                                        line-height: 1.36;
+                                                        color: var(--accent-color-white);
+                                                        text-align: center;
+                                                        letter-spacing: 0.06em;
+                                                        text-transform: uppercase;
+                                                        margin-bottom: 30px;
+                                                    }
+                                                    
+                                                    .section-button {
+                                                        font-weight: 700;
+                                                        font-size: 16px;
+                                                        line-height: 1.88;
+                                                        color: var(--accent-color-white);
+                                                        background-color: var(--accent-color);
+                                                        cursor: pointer;
+                                                        display: block;
+                                                        text-align: center;
+                                                        letter-spacing: 0.06em;
+                                                        border: 0;
+                                                        width: 200px;
+                                                        height: 50px;
+                                                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                                                        border-radius: 4px;
+                                                        margin-left: auto;
+                                                        margin-right: auto;
+                                                        transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .section-button:hover,
+                                                    .section-button:focus {
+                                                        background-color: var(--btn-blue);
+                                                        color: var(--accent-color-white);
+                                                    }
+                                                    /*==================NAV=================*/
+                                                    
+                                                    .nav-link {
+                                                        font-weight: 500;
+                                                        font-size: 14px;
+                                                        line-height: 1.14;
+                                                        letter-spacing: 0.02em;
+                                                        color: var(--accent-color-black);
+                                                        display: block;
+                                                        padding-top: 32px;
+                                                        padding-bottom: 32px;
+                                                        transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                        position: relative;
+                                                    }
+                                                    
+                                                    .nav-link::after {
+                                                        content: "";
+                                                        display: block;
+                                                        width: 100%;
+                                                        height: 2px;
+                                                        background-color: var(--accent-color);
+                                                        position: absolute;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        transform: scaleX(0);
+                                                        transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .nav-link:hover::after,
+                                                    .nav-link.current::after {
+                                                        transform: scaleX(1);
+                                                    }
+                                                    
+                                                    .nav-link:hover,
+                                                    .nav-link:focus,
+                                                    .current {
+                                                        color: var(--accent-color);
+                                                    }
+                                                    /*================content-list==================*/
+                                                    
+                                                    .section-content {
+                                                        padding-top: 94px;
+                                                        padding-bottom: 94px;
+                                                    }
+                                                    
+                                                    .feature-list {
+                                                        display: flex;
+                                                        flex-wrap: nowrap;
+                                                    }
+                                                    
+                                                    .content-list {
+                                                        font-weight: 700;
+                                                        font-size: 14px;
+                                                        line-height: 1.14;
+                                                        letter-spacing: 0.03em;
+                                                        text-transform: uppercase;
+                                                        color: var(--accent-color-black);
+                                                        margin-bottom: 10px;
+                                                        margin-top: 33px;
+                                                    }
+                                                    
+                                                    .content-desc {
+                                                        width: 270px;
+                                                        margin-right: 30px;
+                                                        margin-right: 30px;
+                                                    }
+                                                    
+                                                    .content-desc:last-child {
+                                                        margin-right: 0;
+                                                    }
+                                                    /*=================content-body==================*/
+                                                    
+                                                    .content-body {
+                                                        font-size: 14px;
+                                                        line-height: 1.71;
+                                                        letter-spacing: 0.03em;
+                                                        color: var(--accent-color-grey);
+                                                    }
+                                                    /*==================section-title (h2)=================*/
+                                                    
+                                                    .section-title {
+                                                        font-weight: 700;
+                                                        font-size: 36px;
+                                                        line-height: 1.16;
+                                                        color: var(--accent-color-black);
+                                                    }
+                                                    /*============DESKTOP (Чем мы занимаемся)=============*/
+                                                    
+                                                    .about-desktop-list {
+                                                        margin-left: 30px;
+                                                        width: 370px;
+                                                        position: relative;
+                                                    }
+                                                    
+                                                    .section-desktop {
+                                                        padding-bottom: 86px;
+                                                    }
+                                                    
+                                                    .overlay {
+                                                        position: absolute;
+                                                        bottom: 0;
+                                                        left: 0;
+                                                        width: 100%;
+                                                        background: rgba(47, 48, 58, 0.8);
+                                                        color: var(--accent-color-white);
+                                                        font-weight: bold;
+                                                        font-size: 14px;
+                                                        line-height: 1.14;
+                                                        text-transform: uppercase;
+                                                        letter-spacing: 0.03em;
+                                                        text-align: center;
+                                                        padding-top: 27px;
+                                                        padding-bottom: 27px;
+                                                    }
+                                                    /*===============Члени команди================*/
+                                                    
+                                                    .section-about {
+                                                        padding-top: 102px;
+                                                        padding-bottom: 94px;
+                                                        background: var(--accen-section-about);
+                                                    }
+                                                    
+                                                    .section-title {
+                                                        margin-bottom: 50px;
+                                                        text-align: center;
+                                                    }
+                                                    
+                                                    .list-about {
+                                                        display: flex;
+                                                        margin-left: -30px;
+                                                    }
+                                                    
+                                                    .about-masters-list {
+                                                        margin-left: 30px;
+                                                        width: 270px;
+                                                        background-color: var(--accent-color-white);
+                                                        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                                                        border-radius: 0px 0px 4px 4px;
+                                                    }
+                                                    
+                                                    .about-title {
+                                                        font-weight: 500;
+                                                        font-size: 16px;
+                                                        line-height: 1.18;
+                                                        letter-spacing: 0.03em;
+                                                        text-transform: initial;
+                                                        color: var(--accent-color-black);
+                                                        text-align: center;
+                                                        margin-bottom: 10px;
+                                                    }
+                                                    
+                                                    .about-text {
+                                                        font-size: 16px;
+                                                        line-height: 1.18;
+                                                        color: var(--accent-color-grey);
+                                                        text-align: center;
+                                                        margin-bottom: 17px;
+                                                    }
+                                                    
+                                                    .our-comand {
+                                                        padding: 34px 32px 30px 32px;
+                                                    }
+                                                    
+                                                    .main-button:hover,
+                                                    .main-button:focus {
+                                                        color: var(--accent-color-white);
+                                                        background-color: var(--accent-color);
+                                                        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+                                                        border-radius: 4px;
+                                                        cursor: pointer;
+                                                        outline: 0;
+                                                    }
+                                                    /*============"portfolio"=============*/
+                                                    
+                                                    .portfolio {
+                                                        padding-top: 94px;
+                                                        padding-bottom: 94px;
+                                                    }
+                                                    
+                                                    .main-button {
+                                                        color: #212121;
+                                                        background-color: var(--accen-section-about);
+                                                        font-weight: 500;
+                                                        font-size: 16px;
+                                                        line-height: 1.62;
+                                                        padding: 6px 22px;
+                                                        border: 0;
+                                                        border-radius: 4px;
+                                                        cursor: pointer;
+                                                        transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .name-portfolio {
+                                                        display: flex;
+                                                        margin-left: -8px;
+                                                        margin-bottom: 50px;
+                                                        justify-content: center;
+                                                    }
+                                                    
+                                                    .list-name-port {
+                                                        margin-left: 8px;
+                                                        color: var(--accent-color-white);
+                                                    }
+                                                    
+                                                    .list-portfolio {
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                    }
+                                                    
+                                                    .card {
+                                                        width: 370px;
+                                                        margin-right: 30px;
+                                                        margin-bottom: 30px;
+                                                        background: var(--accent-color-white);
+                                                        border: 1px solid #EEEEEE;
+                                                        box-sizing: border-box;
+                                                    }
+                                                    
+                                                    .portfolio-overlay {
+                                                        width: 100%;
+                                                        height: 294px;
+                                                        position: relative;
+                                                        overflow: hidden;
+                                                        transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .card-overlay {
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        background: rgba(33, 150, 243, 0.9);
+                                                        padding: 64px 24px 64px 24px;
+                                                        transform: translateY(100%);
+                                                        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                    }
+                                                    
+                                                    .text-overlay {
+                                                        font-family: Roboto;
+                                                        font-style: normal;
+                                                        font-weight: normal;
+                                                        font-size: 18px;
+                                                        line-height: 1.55;
+                                                        color: var(--accent-color-white);
+                                                    }
+                                                    
+                                                    .card:hover .card-overlay {
+                                                        transform: translateY(0);
+                                                    }
+                                                    
+                                                    .card:nth-child(3n) {
+                                                        margin-right: 0;
+                                                    }
+                                                    
+                                                    .card:nth-last-child(-n + 3) {
+                                                        margin-bottom: 0;
+                                                    }
+                                                    
+                                                    .portfolio-title {
+                                                        font-weight: 700;
+                                                        font-size: 18px;
+                                                        line-height: 2;
+                                                        color: var(--accent-color-black);
+                                                        margin-bottom: 4px;
+                                                    }
+                                                    
+                                                    .portfolio-text {
+                                                        font-weight: 500;
+                                                        font-size: 16px;
+                                                        line-height: 1.88;
+                                                        color: var(--accent-color-grey);
+                                                    }
+                                                    
+                                                    .info-portfolio {
+                                                        padding-top: 20px;
+                                                        padding-bottom: 20px;
+                                                        padding-left: 24px;
+                                                        padding-right: 24px;
+                                                    }
+                                                    
+                                                    .card:hover {
+                                                        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+                                                    }
+                                                    /*==============Наши клиенты=============*/
+                                                    
+                                                    .section-client {
+                                                        padding-top: 101.41px;
+                                                        padding-bottom: 94px;
+                                                        background-color: var(--accent-color-white);
+                                                    }
+                                                    
+                                                    .client-list {
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    .client-list-item {
+                                                        margin-right: 30px;
+                                                    }
+                                                    
+                                                    .client-link {
+                                                        display: flex;
+                                                        border: solid 1px #AFB1B8;
+                                                        border-radius: 5px;
+                                                        width: 170px;
+                                                        height: 90px;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                        transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .yaco,
+                                                    .tagline,
+                                                    .company,
+                                                    .foster,
+                                                    .brand,
+                                                    .tag {
+                                                        fill: var(--icon-grey);
+                                                        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .client-link:hover,
+                                                    .client-link:focus {
+                                                        border: solid 1px var(--accent-color);
+                                                    }
+                                                    
+                                                    .client-link:hover svg,
+                                                    .client-link:focus svg {
+                                                        fill: var(--accent-color);
+                                                    }
+                                                    /* .client-section:hover .tagline,
+.client-section:focus .tagline {
+    fill: var(--accent-color);
+}
+
+.client-section:hover .company,
+.client-section:focus .company {
+    fill: var(--accent-color);
+}
+
+.client-section:hover .foster,
+.client-section:focus .foster {
+    fill: var(--accent-color);
+}
+
+.client-section:hover .brand,
+.client-section:focus .brand {
+    fill: var(--accent-color);
+}
+
+.client-section:hover .tag,
+.client-section:focus .tag {
+    fill: var(--accent-color);
+} */
+                                                    /*================footer=================*/
+                                                    
+                                                    .container-conect {
+                                                        display: flex;
+                                                        align-items: baseline;
+                                                    }
+                                                    
+                                                    .footer-contact {
+                                                        background-color: var(--color-grey);
+                                                        padding-top: 60px;
+                                                        padding-bottom: 60px;
+                                                    }
+                                                    
+                                                    .footer-contact .link-logo {
+                                                        color: var(--accent-color-white);
+                                                    }
+                                                    
+                                                    .address-list {
+                                                        margin-top: 20px;
+                                                    }
+                                                    
+                                                    .mail-footer,
+                                                    .link-footer {
+                                                        font-weight: 400;
+                                                        font-size: 14px;
+                                                        line-height: 1.14;
+                                                        color: rgba(255, 255, 255, 0.6);
+                                                        display: block;
+                                                    }
+                                                    
+                                                    .mail-footer {
+                                                        margin-bottom: 9px;
+                                                    }
+                                                    
+                                                    .footer-address {
+                                                        font-size: 14px;
+                                                        line-height: 1.71;
+                                                        letter-spacing: 0.03em;
+                                                        color: var(--accent-color-white);
+                                                        margin-bottom: 9px;
+                                                    }
+                                                    
+                                                    .form-footer {
+                                                        margin-left: auto;
+                                                    }
+                                                    
+                                                    .footer-form-modal {
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    .form-title-footer {
+                                                        font-weight: bold;
+                                                        font-size: 14px;
+                                                        line-height: 1.14;
+                                                        letter-spacing: 0.03em;
+                                                        letter-spacing: 0.03em;
+                                                        color: var(--accent-color-white);
+                                                        text-transform: uppercase;
+                                                        margin-bottom: 20px;
+                                                    }
+                                                    
+                                                    .modal-footer-input {
+                                                        width: 358px;
+                                                        height: 50px;
+                                                        border: 1px solid rgba(255, 255, 255, 0.3);
+                                                        box-sizing: border-box;
+                                                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+                                                        border-radius: 4px;
+                                                        padding-left: 16px;
+                                                        background-color: #2F303A;
+                                                        color: var(--accent-color-white);
+                                                    }
+                                                    
+                                                    .form-footer-btn {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                        width: 200px;
+                                                        height: 50px;
+                                                        font-weight: 900;
+                                                        font-size: 16px;
+                                                        line-height: 1.87;
+                                                        letter-spacing: 0.06em;
+                                                        color: var(--accent-color-white);
+                                                        background: #2196F3;
+                                                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                                                        border-radius: 4px;
+                                                        margin-left: 12px;
+                                                    }
+                                                    
+                                                    .social-conect-icon {
+                                                        fill: var(--accent-color-white);
+                                                        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                        margin-left: 10px;
+                                                    }
+                                                    /*============для иконок=============*/
+                                                    
+                                                    .conect {
+                                                        margin-left: 86px;
+                                                    }
+                                                    
+                                                    .conect-title {
+                                                        text-transform: uppercase;
+                                                        font-weight: 700;
+                                                        font-size: 14px;
+                                                        line-height: 1.14;
+                                                        letter-spacing: 0.03em;
+                                                        color: var(--accent-color-white);
+                                                        margin-bottom: 21px;
+                                                    }
+                                                    
+                                                    .footer-social-list {
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    .social-conect {
+                                                        fill: var(--accent-color-white);
+                                                        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .social-link-conect {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        width: 44px;
+                                                        height: 44px;
+                                                        background-color: rgba(255, 255, 255, 0.1);
+                                                        border-radius: 50%;
+                                                        transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .social-list-item {
+                                                        margin-right: 10px;
+                                                    }
+                                                    
+                                                    .social-link-conect:hover,
+                                                    .social-link-conect:focus {
+                                                        background-color: var(--accent-color);
+                                                    }
+                                                    
+                                                    .social-link-conect:hover .social-conect,
+                                                    .social-link-conect:focus .social-conect {
+                                                        fill: var(--accent-color-white);
+                                                    }
+                                                    /*===============Modal Модальное окно==============*/
+                                                    
+                                                    .popup {
+                                                        position: fixed;
+                                                        top: 0;
+                                                        left: 0;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        background: rgba(0, 0, 0, 0.2);
+                                                        opacity: 1;
+                                                        transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                    }
+                                                    
+                                                    .popup.is-hidden {
+                                                        opacity: 0;
+                                                        pointer-events: none;
+                                                    }
+                                                    /* .popup .is-hilden .modal {
+    transform: scale(0.9);
+} */
+                                                    
+                                                    .modal {
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        left: 50%;
+                                                        width: 528px;
+                                                        height: 581px;
+                                                        padding: 40px;
+                                                        background-color: var(--accent-color-white);
+                                                        transform: translate(-50%, -50%) scale(1);
+                                                        opacity: 1;
+                                                        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                    }
+                                                    
+                                                    .conect-close {
+                                                        fill: var(--accent-color-black);
+                                                        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .but-close {
+                                                        position: absolute;
+                                                        top: 8px;
+                                                        right: 8px;
+                                                        width: 30px;
+                                                        height: 30px;
+                                                        border-radius: 50% 50%;
+                                                        color: var(--accent-color-grey);
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                    }
+                                                    
+                                                    .title-form {
+                                                        font-weight: bold;
+                                                        font-size: 20px;
+                                                        line-height: 1.15;
+                                                        text-align: center;
+                                                        margin-bottom: 12px;
+                                                    }
+                                                    
+                                                    .visually-hidden {
+                                                        position: absolute;
+                                                        width: 1px;
+                                                        height: 1px;
+                                                        margin: -1px;
+                                                        border: 0;
+                                                        padding: 0;
+                                                        white-space: nowrap;
+                                                        clip-path: inset(100%);
+                                                        clip: rect(0 0 0 0);
+                                                        overflow: hidden;
+                                                    }
+                                                    
+                                                    .modal-form {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                    }
+                                                    
+                                                    .modal-form-input {
+                                                        width: 100%;
+                                                        height: 40px;
+                                                        border: 1px solid rgba(33, 33, 33, 0.2);
+                                                        border-radius: 4px;
+                                                        padding-left: 42px;
+                                                    }
+                                                    
+                                                    .modal-form-input:hover+.icon-input,
+                                                    .modal-form-input:focus+.icon-input {
+                                                        fill: var(--accent-color);
+                                                        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .modal-form-input:hover,
+                                                    .modal-form-input:focus {
+                                                        outline: none;
+                                                        border-color: var(--accent-color);
+                                                        transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .icon-input {
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        left: 15px;
+                                                        transform: translateY(-50%);
+                                                        display: block;
+                                                    }
+                                                    
+                                                    .modal-form-section {
+                                                        position: relative;
+                                                        display: block;
+                                                    }
+                                                    
+                                                    .modal-form-field {
+                                                        margin-bottom: 10px;
+                                                        font-weight: 400;
+                                                        font-size: 12px;
+                                                        line-height: 1.16;
+                                                    }
+                                                    
+                                                    .modal-form-message {
+                                                        width: 100%;
+                                                        height: 120px;
+                                                        margin-top: 4px;
+                                                        border: 1px solid rgba(33, 33, 33, 0.2);
+                                                        box-sizing: border-box;
+                                                        border-radius: 4px;
+                                                        padding: 12px 16px;
+                                                        resize: none;
+                                                    }
+                                                    
+                                                    .modal-form-message::placeholder {
+                                                        font-weight: normal;
+                                                        font-size: 14px;
+                                                        line-height: 1.14;
+                                                        color: rgba(117, 117, 117, 0.5);
+                                                    }
+                                                    
+                                                    .modal-form-message:hover,
+                                                    .modal-form-message:focus {
+                                                        outline: none;
+                                                        border-color: var(--accent-color);
+                                                        transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .modal-form-check-desc::before {
+                                                        display: block;
+                                                        content: "";
+                                                        width: 16px;
+                                                        height: 16px;
+                                                        border: 1px solid #000000;
+                                                        margin-right: 7px;
+                                                    }
+                                                    
+                                                    .modal-form-check-desc {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        font-weight: 400;
+                                                        font-size: 14px;
+                                                        line-height: 1.71;
+                                                        letter-spacing: 0.03em;
+                                                        color: #757575;
+                                                    }
+                                                    
+                                                    .modal-form-term:checked+.modal-form-check-desc::before {
+                                                        background: url("./image/checkbox.svg") var(--accent-color) no-repeat center center;
+                                                    }
+                                                    
+                                                    .modal-form-term:focus+.modal-form-check-desc::before {
+                                                        outline: none;
+                                                        border-color: var(--accent-color);
+                                                        transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                                                    }
+                                                    
+                                                    .form-btn {
+                                                        width: 200px;
+                                                        height: 50px;
+                                                        left: 700px;
+                                                        background: #2196F3;
+                                                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                                                        border-radius: 4px;
+                                                        color: var(--accent-color-white);
+                                                        margin-top: 30px;
+                                                        margin-left: auto;
+                                                        margin-right: auto;
+                                                    }
