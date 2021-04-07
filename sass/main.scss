@@ -6,10 +6,7 @@
 @import "./base/common";
 @import "./base/container";
 // import components
-@import "./components/address-list";
-@import "./components/advantages";
 @import "./components/but-close";
-@import "./components/client";
 @import "./components/conect";
 @import "./components/contacts";
 @import "./components/features";
@@ -19,18 +16,12 @@
 @import "./components/logo";
 @import "./components/modal-button";
 @import "./components/modal-form-check-desc";
-@import "./components/modal-form-field";
-@import "./components/navigation";
 @import "./components/overlay";
-@import "./components/portfolio-list";
-@import "./components/portfolio-modal";
 @import "./components/section-title";
 @import "./components/social-list";
-@import "./components/team-item";
-@import "./components/team-user";
-@import "./components/team";
 @import "./components/title-form";
 // import layouts
+@import "./layout/address-list";
 @import "./layout/advantage-section";
 @import "./layout/client-section";
 @import "./layout/features-section";
@@ -41,3 +32,8 @@
 @import "./layout/popup";
 @import "./layout/portfolio-section";
 @import "./layout/team-section";
+@import "./layout/team-section";
+@import "./layout/portfolio-list";
+@import "./layout/client";
+@import "./layout/navigation";
+@import "./layout/portfolio-modal";
