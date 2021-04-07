@@ -499,6 +499,11 @@ body {
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
+.nav-header {
+  display: flex;
+  align-items: baseline;
+}
+
 .navigation {
   display: flex;
   margin-left: 93px;
@@ -852,11 +857,6 @@ body {
 .modal-form {
   display: flex;
   flex-direction: column;
-}
-
-.nav-header {
-  display: flex;
-  align-items: baseline;
 }
 
 .popup {
