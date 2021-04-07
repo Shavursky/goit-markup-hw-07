@@ -18,7 +18,7 @@ img {
 /*=========Body=========*/
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--main-font);
     color: #212121;
 }
 
@@ -35,10 +35,4 @@ body {
 .list {
     list-style: none;
     font-style: normal;
-}
-
-.features {
-    display: flex;
-    margin-left: -30px;
-    padding: auto;
 }
